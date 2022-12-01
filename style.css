@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background-color: hsl(185, 41%, 84%);
+}
+p {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  margin: 0;
+}
+.logo {
+  text-align: center;
+  height: 300px;
+}
+.flex {
+  display: flex;
+}
+.mainbox {
+  border-radius: 30px;
+  background-color: white;
+  height: 500px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  height: 500px;
+  width: 500px;
+}
+.greenbox {
+  height: 440px;
+  width: 440px;
+  background-color: hsl(183, 100%, 15%);
+  margin: 30px;
+  border-radius: 20px;
+}
+.whitebox {
+  height: 440px;
+  width: 440px;
+  margin: 30px;
+}
+.Text {
+  height: 30px;
+}
+.Buttons {
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tipButton {
+  height: 70px;
+  width: 140px;
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  border-radius: 8px;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: solid 0px;
+}
+#billInput {
+  height: 50px;
+  width: 440px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 40px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+}
+#billInput:focus {
+  border-radius: 8px;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+#peopleAmountInput {
+  height: 50px;
+  width: 440px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 40px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+}
+#peopleAmountInput:focus {
+  border-radius: 8px;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+#percentInput {
+  height: 60px;
+  width: 140px;
+  border: solid 2px hsl(172, 67%, 45%);
+  border-radius: 8px;
+  outline: none;
+  font-size: 40px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+}
+#mainLogo {
+  padding-top: 200px;
+}
+#gray {
+  color: hsl(186, 14%, 43%);
+}
+#dollar {
+  height: 25px;
+  position: relative;
+  top: -40px;
+  bottom: 0;
+  left: 8px;
+}
+#person {
+  height: 25px;
+  position: relative;
+  bottom: 40px;
+  left: 8px;
+}

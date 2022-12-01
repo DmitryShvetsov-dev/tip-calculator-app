@@ -5,6 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tip calculator app</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <script src="./script.js"></script>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="splitterLogo" id="mainLogo" />
+    </div>
+    <div class="mainbox">
+      <div class="flex">
+        <div class="buttons box">
+          <div class="whitebox">
+            <div class="bill Text"><p id="gray">Bill</p></div>
+            <div class="bill Input">
+              <input type="text" id="billInput" /><img
+                src="./images/icon-dollar.svg"
+                alt="dollar"
+                id="dollar"
+              />
+            </div>
+            <div class="margin">
+              <div class="select Text"><p id="gray">Select Tip %</p></div>
+              <div class="Buttons">
+                <button class="tipButton" id="5%">5%</button>
+                <button class="tipButton" id="10%">10%</button>
+                <button class="tipButton" id="15%">15%</button>
+              </div>
+              <div class="Buttons">
+                <button class="tipButton" id="25%">25%</button>
+                <button class="tipButton" id="50%">50%</button>
+                <input type="text" id="percentInput" />
+              </div>
+            </div>
+            <div class="numberOfPeople Text">
+              <p id="gray">Number of People</p>
+            </div>
+            <div class="popleAmount Input">
+              <input type="text" id="peopleAmountInput" />
+              <img src="./images/icon-person.svg" alt="person" id="person" />
+            </div>
+          </div>
+        </div>
+        <div class="calculations box"><div class="greenbox"></div></div>
+      </div>
+    </div>
+  </body>
 </html>
