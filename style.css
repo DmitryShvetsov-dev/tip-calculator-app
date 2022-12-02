@@ -58,6 +58,22 @@ p {
   color: white;
   border: solid 0px;
 }
+.tipButton:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+.marginerOfGreen {
+  height: 340px;
+  width: 340px;
+  padding: 50px;
+}
+.tipAmount {
+  display: flex;
+}
+.totalAmount {
+  display: flex;
+  margin-top: 50px;
+}
 #billInput {
   height: 50px;
   width: 440px;
@@ -115,4 +131,37 @@ p {
   position: relative;
   bottom: 40px;
   left: 8px;
+}
+#tipText {
+  color: white;
+  font-size: 18px;
+}
+#totalText {
+  color: white;
+  font-size: 18px;
+}
+#personText {
+  font-size: 14px;
+  color: hsl(186, 14%, 43%);
+}
+#tipNumber {
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+  margin-left: 100px;
+}
+#totalNumber {
+  font-size: 40px;
+  color: hsl(172, 67%, 45%);
+  margin-left: 143px;
+}
+#resetButton {
+  height: 50px;
+  width: 340px;
+  font-family: "Space Mono", monospace;
+  font-size: 23px;
+  border-radius: 8px;
+  background-color: hsla(172, 100%, 50%, 0.178);
+  color: hsl(183, 100%, 15%);
+  border: solid 0px;
+  margin-top: 120px;
 }
