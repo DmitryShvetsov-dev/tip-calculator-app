@@ -29,7 +29,7 @@
           <div class="whitebox">
             <div class="bill Text"><p id="gray">Bill</p></div>
             <div class="bill Input">
-              <input type="text" id="billInput" /><img
+              <input type="text" id="billInput" placeholder="0" /><img
                 src="./images/icon-dollar.svg"
                 alt="dollar"
                 id="dollar"
@@ -38,21 +38,32 @@
             <div class="margin">
               <div class="select Text"><p id="gray">Select Tip %</p></div>
               <div class="Buttons">
-                <button class="tipButton" id="5%">5%</button>
-                <button class="tipButton" id="10%">10%</button>
-                <button class="tipButton" id="15%">15%</button>
+                <button class="tipButton" id="5%" onclick="button1()">
+                  5%
+                </button>
+                <button class="tipButton" id="10%" onclick="button2()">
+                  10%
+                </button>
+                <button class="tipButton" id="15%" onclick="button3()">
+                  15%
+                </button>
               </div>
               <div class="Buttons">
-                <button class="tipButton" id="25%">25%</button>
-                <button class="tipButton" id="50%">50%</button>
-                <input type="text" id="percentInput" />
+                <button class="tipButton" id="25%" onclick="button4()">
+                  25%
+                </button>
+                <button class="tipButton" id="50%" onclick="button5()">
+                  50%
+                </button>
+                <input type="text" id="percentInput" placeholder="0" />
+                <p id="customButton" onclick="button6()">Custom</p>
               </div>
             </div>
             <div class="numberOfPeople Text">
               <p id="gray">Number of People</p>
             </div>
             <div class="popleAmount Input">
-              <input type="text" id="peopleAmountInput" />
+              <input type="text" id="peopleAmountInput" placeholder="0" />
               <img src="./images/icon-person.svg" alt="person" id="person" />
             </div>
           </div>

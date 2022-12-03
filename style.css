@@ -62,6 +62,10 @@ p {
   color: hsl(183, 100%, 15%);
   background-color: hsl(172, 67%, 45%);
 }
+.tipButton:focus {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
 .marginerOfGreen {
   height: 340px;
   width: 340px;
@@ -77,12 +81,13 @@ p {
 #billInput {
   height: 50px;
   width: 440px;
-  border: 2px solid white;
+  border: solid 2px white;
   outline: none;
   font-size: 40px;
   text-align: right;
   font-family: "Space Mono", monospace;
   color: hsl(183, 100%, 15%);
+  border-radius: 8px;
 }
 #billInput:focus {
   border-radius: 8px;
@@ -97,6 +102,7 @@ p {
   text-align: right;
   font-family: "Space Mono", monospace;
   color: hsl(183, 100%, 15%);
+  border-radius: 8px;
 }
 #peopleAmountInput:focus {
   border-radius: 8px;
@@ -112,6 +118,22 @@ p {
   text-align: right;
   font-family: "Space Mono", monospace;
   color: hsl(183, 100%, 15%);
+  display: none;
+}
+#customButton {
+  font-family: "Space Mono", monospace;
+  font-size: 30px;
+  height: 70px;
+  width: 140px;
+  text-align: center;
+  margin-top: 20px;
+  color: hsl(186, 14%, 43%);
+}
+#customButton:hover {
+  color: hsl(172, 67%, 45%);
+}
+::placeholder {
+  color: hsl(185, 21%, 65%);
 }
 #mainLogo {
   padding-top: 200px;
