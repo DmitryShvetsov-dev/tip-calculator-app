@@ -4,6 +4,8 @@ let timserForPeopleAmountInput = setInterval(
   () => checkPeopleAmountInput(),
   20
 );
+let timserForButton6 = setInterval(() => checkButton6(), 20);
+let timserForResetButton = setInterval(() => resetButtonActive(), 20);
 function calculator() {
   values = [
     document.getElementById("billInput").value,
@@ -15,8 +17,28 @@ function calculator() {
   let totalValue = Math.round(values[0] / values[1] + tipValue);
   tip.innerHTML = tipValue;
   total.innerHTML = totalValue;
+  if (isNaN(tipValue)) {
+    tip.innerHTML = "0.00";
+  }
+  if (isNaN(totalValue)) {
+    total.innerHTML = "0.00";
+  }
+  if (tipValue == Infinity) {
+    tip.innerHTML = "0.00";
+  }
+  if (totalValue == Infinity) {
+    total.innerHTML = "0.00";
+  }
 }
-
+function reset() {
+  location.reload();
+}
+function resetButtonActive() {
+  let button = document.getElementById("resetButton");
+  if (tipPercent != 0) {
+    button.id = "resetButtonActive";
+  }
+}
 let tipPercent = 0;
 let button6IsActive = false;
 function button1() {
@@ -39,11 +61,13 @@ function button6() {
   document.getElementById("percentInput").style.display = "block";
   button6IsActive = true;
 }
-while (button6IsActive) {
-  let timserForButton6 = setInterval(() => checkButton6(), 20);
-}
+
 function checkButton6() {
-  tipPercent = document.getElementById("percentInput").value;
+  if (button6IsActive) {
+    tipPercent = document.getElementById("percentInput").value;
+  } else {
+    return;
+  }
   parseInt(tipPercent);
   if (isNaN(tipPercent)) {
     document.getElementById("percentInput").style.border =
