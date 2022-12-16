@@ -201,3 +201,68 @@ p {
 #resetButtonActive:hover {
   background-color: hsl(172, 86%, 77%);
 }
+@media (max-width: 1000px) {
+  .logo {
+    height: 100px;
+  }
+  #mainLogo {
+    padding-top: 15px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .mainbox {
+    width: 500px;
+    height: 1000px;
+  }
+}
+@media (max-width: 525px) {
+  .mainbox {
+    width: 365px;
+  }
+  #billInput {
+    width: 300px;
+  }
+  #dollar {
+    top: -5px;
+    left: -300px;
+  }
+  .Buttons {
+    width: 300px;
+  }
+  .tipButton {
+    height: 70px;
+    width: 80px;
+  }
+  #customButton {
+    height: 70px;
+    width: 80px;
+  }
+  #percentInput {
+    width: 80px;
+  }
+  #peopleAmountInput {
+    width: 300px;
+  }
+  #person {
+    bottom: 5px;
+    left: -300px;
+  }
+  .greenbox {
+    height: 300px;
+    width: 300px;
+  }
+  .marginerOfGreen {
+    padding: 10px;
+  }
+  #tipNumber {
+    margin-left: 40px;
+  }
+  #totalNumber {
+    margin-left: 80px;
+  }
+  #resetButton {
+    margin-top: 30px;
+    width: 280px;
+  }
+}
